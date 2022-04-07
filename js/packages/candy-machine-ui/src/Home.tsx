@@ -3,7 +3,6 @@ import * as anchor from '@project-serum/anchor';
 
 import styled from 'styled-components';
 import { Container, Snackbar } from '@material-ui/core';
-import Paper from '@material-ui/core/Paper';
 import Alert from '@material-ui/lab/Alert';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
@@ -22,16 +21,27 @@ import { MintCountdown } from './MintCountdown';
 import { MintButton } from './MintButton';
 import { GatewayProvider } from '@civic/solana-gateway-react';
 import { sendTransaction } from './connection';
+import { BsDiscord, BsTwitter, BsInstagram } from "react-icons/bs";
+import { SiTiktok } from "react-icons/si";
+import { MdOpenInNew } from "react-icons/md";
+import nftING from "./assets/image/nft.png";
+import nftImg1 from "./assets/image/nftimg1.png";
+import nftImg3 from "./assets/image/nftimg3.png";
 
 const ConnectButton = styled(WalletDialogButton)`
-  width: 100%;
   height: 60px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  background: linear-gradient(180deg, #604ae5 0%, #813eee 100%);
+  margin-top: 2rem;
+  margin-bottom: 4rem;
   color: white;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   font-size: 16px;
   font-weight: bold;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  background-color:  #2a2b2fe1;
+  font-family: Poppins;
+  
 `;
 
 const MintContainer = styled.div``; // add your owns styles here
@@ -42,6 +52,82 @@ export interface HomeProps {
   txTimeout: number;
   rpcHost: string;
 }
+
+const teamData = [
+  {
+    photo: nftING,
+    name: "Calvin",
+    desc: "lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem ",
+  },
+  {
+    photo: nftING,
+
+    name: "Rohit",
+    desc: "lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem ",
+  },
+  {
+    photo: nftING,
+
+    name: "Calvin",
+    desc: "lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem ",
+  },
+  {
+    photo: nftING,
+
+    name: "Rohit",
+    desc: "lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem ",
+  },
+  {
+    photo: nftING,
+
+    name: "Calvin",
+    desc: "lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem ",
+  },
+  {
+    photo: nftING,
+
+    name: "Rohit",
+    desc: "lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem ",
+  },
+  {
+    photo: nftING,
+
+    name: "Calvin",
+    desc: "lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem ",
+  },
+  {
+    photo: nftING,
+
+    name: "Rohit",
+    desc: "lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem ",
+  },
+  {
+    photo: nftING,
+
+    name: "Rohit",
+    desc: "lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem ",
+  },
+];
+
+const advisorsData = [
+  {
+    photo: nftING,
+    name: "Calvin",
+    desc: "lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem ",
+  },
+  {
+    photo: nftING,
+
+    name: "Rohit",
+    desc: "lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem ",
+  },
+  {
+    photo: nftING,
+
+    name: "Calvin",
+    desc: "lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem lorem ispsum Doloar sit amaet lorem ",
+  },
+];
 
 const Home = (props: HomeProps) => {
   const [isUserMinting, setIsUserMinting] = useState(false);
@@ -292,16 +378,49 @@ const Home = (props: HomeProps) => {
   ]);
 
   return (
-    <Container style={{ marginTop: 100 }}>
-      <Container maxWidth="xs" style={{ position: 'relative' }}>
-        <Paper
-          style={{
-            padding: 24,
-            paddingBottom: 10,
-            backgroundColor: '#151A1F',
-            borderRadius: 6,
-          }}
-        >
+    <div>
+      <div className="navbar">
+        <div className="logo">LS</div>
+        <div style={{textAlign:"center"}}>
+          <h2 style={{ margin: "0.4rem", fontFamily: "Alegreya" }}>LOST SOLZ</h2>
+          <hr />
+          <div className="navlinks">
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#nft">NFT</a>
+
+            <a href="#team">Team</a>
+
+            <a href="#roadmap">Roadmap</a>
+          </div>
+        </div>
+        <div className="contacts">
+          <div className="social-icon">
+            <a href="https://www.google.com">
+            <BsDiscord size="25" /></a>
+          </div>
+          <div className="social-icon">
+          <a href="https://www.google.com">
+            <BsTwitter size="25" /></a>
+          </div>
+          <div className="social-icon">
+          <a href="https://www.google.com">
+            <BsInstagram size="25" /></a>
+          </div>
+          <div className="social-icon">
+          <a href="https://www.google.com">
+            <SiTiktok size="25" /> </a>
+          </div>
+        </div>
+      </div>
+      <div className="hero" id="home">
+        <h1 style={{fontFamily: "Alegreya", marginTop:"8rem"}}>SERIES 2 COMING SOON</h1>
+        <Container maxWidth="xs" style={{
+          position: 'relative', display: "flex", alignItems: "center",  justifyContent:"center"
+        }}>
+        <div>
           {!wallet.connected ? (
             <ConnectButton>Connect Wallet</ConnectButton>
           ) : (
@@ -498,15 +617,8 @@ const Home = (props: HomeProps) => {
               </MintContainer>
             </>
           )}
-          <Typography
-            variant="caption"
-            align="center"
-            display="block"
-            style={{ marginTop: 7, color: 'grey' }}
-          >
-            Powered by METAPLEX
-          </Typography>
-        </Paper>
+        
+        </div>
       </Container>
 
       <Snackbar
@@ -521,7 +633,322 @@ const Home = (props: HomeProps) => {
           {alertState.message}
         </Alert>
       </Snackbar>
-    </Container>
+
+        <a href="/find-us-on" id="find-us-on">
+          FIND US ON
+        </a>
+        <div id="lost-item">
+          <button>
+            MagicEden{" "}
+            <MdOpenInNew
+              style={{
+                marginLeft: "1rem",
+              }}
+              size="25"
+            />
+          </button>
+          <button>
+            Solanart{" "}
+            <MdOpenInNew
+              style={{
+                marginLeft: "1rem",
+              }}
+              size="25"
+            />
+          </button>
+        </div>
+      </div>
+      <div id="about" >
+        <h1 style={{paddingTop:"10rem"}}>ABOUT THE PROJECT</h1>
+        <div className="content">
+          <p>
+            The Lost Solz are the first NFTs minted on the Solana Blockchain
+            that are both Dynamic and Degenerative. They represent a bridge
+            between the real and virtual worlds - providing value to their
+            owners through the Lost Solz Collective. But be warned: the majority
+            of Lost Solz will incur damages when resold that will affect their
+            ability to collect dividends
+          </p>
+          <br />
+          <p>
+            The Lost Solz Collective is a mini VC fund that seeks to provide
+            value to members through investments into both digital and real
+            world assets. The Collective is funded through 50% of net proceeds
+            from mint sales, as well as royalties collected from future
+            secondary sales. It is our intention that the Collective evolves
+            into a community led DAO fund sooner rather than later.
+          </p>
+          <br />
+          <p>
+            For more information on the investment roadmap and long-term vision
+            <a href="/click-here"> CLICK HERE</a>
+          </p>
+          <br />
+          <p>
+            Membership in the Lost Solz Collective is based on the sum of the
+            Collective Scores (CS) for each Lost Solz NFT held. The initial CS
+            for each of the Lost Solz begins at 10 which equals a Total CS (TCS)
+            of 100,000 for the Collective (i.e. each NFT representing 1/100,000
+            or 0.01%)
+          </p>
+        </div>
+      </div>
+      <div id="nft">
+        <h1 style={{paddingTop:"10rem"}}>THE NFTS</h1>
+        <p style={{ fontSize: "1.1rem" }}>
+          There are two upcoming series to be released for the Lost Solz
+          project: Series 1 (limited to 100) and Series 2 (limited to 9,900).
+        </p>
+        <div className="lost-solz-project">
+          <h2>S1 LOST SOLZ (MAQUETTE)</h2>
+          <p style={{ fontSize: "1.1rem" }}>
+            S1 Lost Solz are a collection of 100 unique NFTs that serves as the
+            blueprint of the project - as such, their eyes are carved with an
+            ‘M’ for Maquette. S1 represents the flagship assets for the project
+            as well, as they feature unique attributes that allow them to
+            generate greater revenue than S2.
+          </p>
+          <ul style={{ fontSize: "1.1rem" }}>
+            <li>Share in 2.5% of S2 mint sales</li>
+            <li>Share in 2.5% royalties from S2 secondary sales</li>
+            <li>CS of 10</li>
+            <li>
+              NO damage to the NFT is inflicted upon resale (more on this later)
+            </li>
+            <li> NO royalties are charged for secondary sales</li>
+          </ul>
+          <div className="sample-nft-img">
+            <img src={nftING} alt="" />
+            <img src={nftING} alt="" />
+            <img src={nftING} alt="" />
+          </div>
+        </div>
+        <div className="lost-solz-project">
+          <h2>S2 LOST SOLZ </h2>
+          <p style={{ fontSize: "1.1rem" }}>
+            S2 Lost Solz are a collection of 9,900 unique NFTs that draw
+            inspiration from “lost souls” in popular culture (movies, music,
+            sports, tv). Unlike S1, these characters will incur damage each time
+            they are resold.
+          </p>
+          <ul style={{ fontSize: "1.1rem" }}>
+            <li>
+              CS deteriorates after each secondary sale
+              <ul>
+                <li>Minted: CS 10</li>
+                <li>After 1 Sale ($ Eye): CS 8</li>
+                <li>After 2 Sales (Scratch): CS 6</li>
+                <li>After 3 Sales (Crack): CS 4</li>
+                <li>After 4+ Sales (Burn): CS 2</li>
+              </ul>
+            </li>
+
+            <li>
+              Royalties of 10% for secondary sales
+              <ul>
+                <li> 5% to the Lost Solz Collective </li>
+                <li> 2.5% to S1 holders </li>
+                <li>2.5% to NFT creators for marketing and promotions</li>
+              </ul>
+            </li>
+          </ul>
+          <div className="sample-nft-img">
+            <img src={nftImg1} alt="" />
+            <img src={nftImg3} alt="" />
+            <img src={nftImg1} alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="team">
+        <h1 style={{paddingTop:"10rem"}}>Team</h1>
+        <div className="team-members">
+          {teamData.map(({ photo, name, desc }) => (
+            <div className="member">
+              <img src={photo} alt="" height="200px" />
+              <div className="name">{name}</div>
+              <div>{desc}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div id="team">
+        <h1 style={{paddingTop:"10rem"}}>Advisors</h1>
+        <div className="team-members">
+          {advisorsData.map(({ photo, name, desc }) => (
+            <div className="member">
+              <img src={photo} alt="" height="200px" />
+              <div className="name">{name}</div>
+              <div>{desc}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="container" id="roadmap">
+        <h1 style={{paddingTop:"5rem"}}>ROADMAP</h1>
+        <div className="timeline">
+          <ul>
+            <li>
+              <div style={{ textAlign: "left" }} className="timeline-content">
+                <h1 style={{ textAlign: "left" }}>Phase 1</h1>
+                <p>
+                  • Mint S1 Lost Solz (100 NFTs)
+                  <br />
+                  <br />
+                  • List on Magic Eden and Solanar <br />
+                  <br />
+                  • List on Howrare.is or Tokensense.io, depending on Solana
+                  compatibility) <br />
+                  <br />
+                  • Create treasury and develop smart contracts for the Lost
+                  Solz Collective which will reward long-term holders and
+                  disincentivize short-term profit taking <br /> <br />• Smart
+                  contracts with degenerative feature that rewards long-term
+                  holders and creates disincentives for short-term profit taking
+                </p>
+              </div>
+            </li>
+            <li>
+              <div style={{ textAlign: "left" }} className="timeline-content">
+                <h1 style={{ textAlign: "left" }}>Phase 2</h1>
+                <p>
+                  • Public campaigns (promotions, giveaways, collaborations) to
+                  raise awareness of project <br />
+                  <br />
+                  • Establish partnerships to identify and create business
+                  opportunities - enabling the Lost Solz Collective to
+                  immediately capitalize once funded <br /> <br />• Release
+                  Whitelist mint requirements for S2 mint (9,900 NFTs)
+                </p>
+              </div>
+            </li>
+            <li>
+              <div style={{ textAlign: "left" }} className="timeline-content">
+                <h1 style={{ textAlign: "left" }}>Phase 3</h1>
+                <p>• Whitelist and public mint for S2</p>
+              </div>
+            </li>
+            <li>
+              <div style={{ textAlign: "left" }} className="timeline-content">
+                <h1 style={{ textAlign: "left" }}>Phase 4</h1>
+                <p>
+                  • Investment roadmap begins to bring value and passive income
+                  to NFT holders
+                  <br />
+                  <br />• Evolve the Lost Solz Collective to operate as a true
+                  DAO
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="faq">
+        <h1>FAQ</h1>
+        <div className="col">
+          <div className="tabs">
+            <div className="tab">
+              <input type="radio" id="rd1" name="rd" />
+              <label className="tab-label" htmlFor="rd1">
+                What blockchain are the Lost Solz be on?
+              </label>
+              <div className="tab-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                facilis.
+              </div>
+            </div>
+            <div className="tab">
+              <input type="radio" id="rd2" name="rd" />
+              <label className="tab-label" htmlFor="rd2">
+                How many Lost Solz NFTs will there be?
+              </label>
+              <div className="tab-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
+                aut.
+              </div>
+            </div>
+            <div className="tab">
+              <input type="radio" id="rd3" name="rd" />
+              <label className="tab-label" htmlFor="rd3">
+                What will the project revenue be used for?
+              </label>
+              <div className="tab-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
+                aut.
+              </div>
+            </div>
+            <div className="tab">
+              <input type="radio" id="rd4" name="rd" />
+              <label className="tab-label" htmlFor="rd4">
+                What will the Lost Solz Collective invest in?
+              </label>
+              <div className="tab-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
+                aut.
+              </div>
+            </div>
+            <div className="tab">
+              <input type="radio" id="rd5" name="rd" />
+              <label className="tab-label" htmlFor="rd5">
+                What is the Collective Score and Total Collective Score?
+              </label>
+              <div className="tab-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
+                aut.
+              </div>
+            </div>
+            <div className="tab">
+              <input type="radio" id="rd6" name="rd" />
+              <label className="tab-label" htmlFor="rd6">
+                What do the damages mean for the Collective Score?
+              </label>
+              <div className="tab-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
+                aut.
+              </div>
+            </div>
+            <div className="tab">
+              <input type="radio" id="rd7" name="rd" />
+              <label className="tab-label" htmlFor="rd7">
+                How can I mint or buy a Lost Solz NFT?
+              </label>
+              <div className="tab-content">
+                Series 1 Lost Solz are currently listed on Magic Eden and
+                Solanart. Series 2 Lost Solz can be minted directly from the
+                link above. The mint date and price is TBD
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="footer">
+        <div style={{display:"flex", alignItems:"flex-start", flexDirection:"column", padding:"0"}}>
+          <h1 style={{margin:"0", padding:"0"}}>Contact</h1>
+          <p  style={{margin:"0", fontSize:"1.2rem"}}>contact@thelostsolz.com</p>
+        </div>
+        <div className="logo">LS</div>
+        <div style={{display:"flex", alignItems:"flex-start", flexDirection:"column", padding:"0"}}>
+          <h1>Follow</h1>
+          <div className="contacts" style={{margin:"0", padding:"0"}}>
+            <div className="social-icon" style={{ marginLeft: "0" }}>
+            <a href="https://www.google.com">
+              <BsDiscord /></a>
+            </div>
+            <div className="social-icon">
+            <a href="https://www.google.com">
+              <BsTwitter /></a>
+            </div>
+            <div className="social-icon">
+            <a href="https://www.google.com">
+              <BsInstagram /></a>
+            </div>
+            <div className="social-icon">
+            <a href="https://www.google.com">
+              <SiTiktok /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

@@ -27,7 +27,6 @@ import { MdOpenInNew } from "react-icons/md";
 import nftING from "./assets/image/nft.png";
 import nftImg1 from "./assets/image/nftimg1.png";
 import nftImg3 from "./assets/image/nftimg3.png";
-import './Home.css'
 
 const ConnectButton = styled(WalletDialogButton)`
   height: 60px;
@@ -399,16 +398,20 @@ const Home = (props: HomeProps) => {
         </div>
         <div className="contacts">
           <div className="social-icon">
-            <BsDiscord size="25" />
+            <a href="https://www.google.com">
+            <BsDiscord size="25" /></a>
           </div>
           <div className="social-icon">
-            <BsTwitter size="25" />
+          <a href="https://www.google.com">
+            <BsTwitter size="25" /></a>
           </div>
           <div className="social-icon">
-            <BsInstagram size="25" />
+          <a href="https://www.google.com">
+            <BsInstagram size="25" /></a>
           </div>
           <div className="social-icon">
-            <SiTiktok size="25" />
+          <a href="https://www.google.com">
+            <SiTiktok size="25" /> </a>
           </div>
         </div>
       </div>
@@ -926,17 +929,21 @@ const Home = (props: HomeProps) => {
         <div style={{display:"flex", alignItems:"flex-start", flexDirection:"column", padding:"0"}}>
           <h1>Follow</h1>
           <div className="contacts" style={{margin:"0", padding:"0"}}>
-            <div className="social-icon" style={{marginLeft:"0"}}>
-              <BsDiscord />
+            <div className="social-icon" style={{ marginLeft: "0" }}>
+            <a href="https://www.google.com">
+              <BsDiscord /></a>
             </div>
             <div className="social-icon">
-              <BsTwitter />
+            <a href="https://www.google.com">
+              <BsTwitter /></a>
             </div>
             <div className="social-icon">
-              <BsInstagram />
+            <a href="https://www.google.com">
+              <BsInstagram /></a>
             </div>
             <div className="social-icon">
-              <SiTiktok />
+            <a href="https://www.google.com">
+              <SiTiktok /></a>
             </div>
           </div>
         </div>

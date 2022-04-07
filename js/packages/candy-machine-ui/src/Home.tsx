@@ -783,8 +783,8 @@ Solanart</span>
           </div>
         </div>
       </div>
-      <div className="team">
-        <h1 className="section-heading">Team</h1>
+      <div className="team-container" id="team">
+        <h1 className="section-heading">TEAM</h1>
         <div className="team-members">
           {teamData.map(({ photo, name, desc }, index) => (
             <div className="member" key={index}>
@@ -795,7 +795,7 @@ Solanart</span>
           ))}
         </div>
       </div>
-      <div className="team">
+      <div className="team-container">
         <h1 className="section-heading">Advisors</h1>
         <div className="team-members">
           {advisorsData.map(({ photo, name, desc },index) => (

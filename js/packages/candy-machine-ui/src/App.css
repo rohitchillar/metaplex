@@ -9,6 +9,7 @@ html {
   border: none;
   margin: 0;
   padding: 0;
+  scroll-padding-top: 8rem;
 }
 .navbar {
   /* border: 2px solid rebeccapurple; */
@@ -16,6 +17,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  /* border: 2px solid red; */
 
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
@@ -26,7 +28,7 @@ html {
 background-color: rgba(255, 255, 255, 0.151);
   margin: 0;
   z-index: 5;
-  padding: 1rem;
+  padding: 1rem 4rem;
   width: 100vw;
 }
 .navbar hr {
@@ -44,7 +46,11 @@ background-color: rgba(255, 255, 255, 0.151);
 .navlinks {
   /* border: 2px solid rebeccapurple; */
   display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: Urbanist;
+  /* border: 2px solid red; */
+
 }
 .navlinks a:hover,
 .navlinks a:target {
@@ -54,31 +60,45 @@ background-color: rgba(255, 255, 255, 0.151);
 
 .navlinks a {
   /* border: 2px solid rebeccapurple; */
-  margin: 0 1rem;
+  margin: 0 0.7rem;
   margin-top: 0.5rem;
   padding: 0.4rem 1rem;
   text-decoration: none;
   color: white;
+  font-size: large;
   /* background-color: white; */
   border-radius: 0.4rem;
+  font-family: Urbanist;
 }
 
 .contacts {
   /* border: 2px solid red; */
+  flex-direction: row-reverse;
   display: flex;
-  margin-left: 3rem;
+  
+  /* margin-left: 3rem; */
+  /* border: 2px solid red; */
 }
 .contacts > .social-icon {
   margin: 0 1rem;
 }
-
+.footer-contact .social-icon{
+  margin-left: 15px;
+}
 .logo {
-  margin-right: 3rem;
+  /* margin-right: 3rem; */
   background-color: white;
   color: black;
   padding: 1.5rem;
   font-weight: bold;
   border-radius: 50%;
+  /* border: 2px solid red; */
+}
+.left, .mid, .right{
+  height: 100% !important;
+  width: 100% !important;
+  /* border: 2px solid red !important; */
+  flex: 1;
 }
 .hero {
   /* border: 2px solid rebeccapurple; */
@@ -98,6 +118,7 @@ background-color: rgba(255, 255, 255, 0.151);
   border-bottom-right-radius: 1rem;
   border: none;
   font-weight: bold;
+  font-family: Poppins;
   background-color: #2a2b2fe1;
   color: white;
 }
@@ -114,19 +135,23 @@ background-color: rgba(255, 255, 255, 0.151);
   background-color: #3f51b5;
 }
 #lost-item > button {
-  padding: 1rem 2rem;
-  margin: 1rem;
-  border-radius: 0.4rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:space-between ;
+  padding: 1rem 1rem;
+  border-radius: 0.7rem;
 
-  /* border-top-left-radius: 1rem; */
-  /* border-bottom-right-radius: 1rem; */
+  font-family: Poppins;
+  margin: 1rem;
   border: none;
-  font-weight: bold;
+  font-weight: 500;
   background-color: #2a2b2fe1;
   color: white;
+
+}
+#lost-item > button > span{
+  margin: 0 1rem;
+  font-size: large;
 }
 #about {
   background-color: black;
@@ -145,6 +170,9 @@ background-color: rgba(255, 255, 255, 0.151);
   padding: 3rem;
   border-radius: 2rem;
   font-size: 1.1rem;
+  font-family: Poppins;
+  line-height: 1.7;
+  
 }
 
 #nft {
@@ -172,21 +200,33 @@ background-color: rgba(255, 255, 255, 0.151);
 .lost-solz-project > h2 {
   /* border: 2px solid red; */
   text-align: left;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: bold;
+  font-family: Alegreya;
   /* margin: 2rem; */
 }
 .lost-solz-project ul {
   margin-left: 2rem;
+font-family: Poppins;
+font-weight: 300;
+/* font-size: 1rem; */
+  line-height: 1.7;
 }
 
 .lost-solz-project p {
   text-align: left;
+  line-height: 1.7;
+  font-family: Poppins;
+font-weight: 300;
+
+
 }
 .lost-solz-project li {
   text-align: left;
+  line-height: 1.7;
+
 }
-#team {
+.team {
   background-color: black;
   color: white;
 }
@@ -214,7 +254,7 @@ background-color: rgba(255, 255, 255, 0.151);
   /* border: 2px solid rgb(61, 50, 50); */
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: left;
 }
 
@@ -228,7 +268,8 @@ background-color: rgba(255, 255, 255, 0.151);
 .member > .name {
   font-weight: bold;
   margin: 1rem 1rem 0.7rem 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-family: Alegreya;
 }
 .member > img {
   height: auto;
@@ -252,9 +293,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 0;
-  background-color: #111;
+  /* padding: 100px 0; */
+  background-color: black;
   flex-direction: column;
+  padding-bottom: 3rem;
 }
 .timeline {
   width: 80%;
@@ -287,6 +329,7 @@ html {
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
+  font-family: Poppins;
 }
 .timeline-content .date {
   font-size: 12px;
@@ -369,7 +412,7 @@ input {
   display: flex;
   /* border: 2px solid red; */
   flex-direction: column;
-  background-color: #111;
+  background-color: black;
   color: white;
   padding-bottom: 3rem;
 }
@@ -393,12 +436,16 @@ input {
   overflow: hidden;
 }
 .tab-label {
+  border-radius: 8px;
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  background: black;
+  background:#1e1f22;
   font-weight: bold;
   cursor: pointer;
+ margin-top: 15px;
+ font-family: Poppins;
+ padding: 2rem;
   /* Icon */
 }
 .tab-label:hover {
@@ -418,10 +465,17 @@ input {
   background: #1e1f22;
   text-align: left;
   transition: all 0.35s;
+  padding-left: 2rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+ font-family: Poppins;
+
 }
 
 input:checked + .tab-label {
   background: #1e1f22;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 input:checked + .tab-label::after {
   transform: rotate(90deg);
@@ -429,9 +483,21 @@ input:checked + .tab-label::after {
 input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
+  padding-left: 2rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+
 }
 
 .social-icon >a{
   color: white;
   text-decoration: none;
+}
+.social-icon >a:hover{
+  color: #3f51b5;
+}
+
+.section-heading{
+padding-top: 1rem;
+  font-family: Alegreya;
 }

@@ -1,6 +1,10 @@
 
 @charset "UTF-8";
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -10,6 +14,10 @@ html {
   margin: 0;
   padding: 0;
   scroll-padding-top: 8rem;
+}
+#landingPage{
+  background: url('./assets/image/stars.png') no-repeat fixed;
+  width: 100vw;
 }
 .navbar {
   /* border: 2px solid rebeccapurple; */
@@ -41,6 +49,7 @@ background-color: rgba(255, 255, 255, 0.151);
 }
 .navbar h2 {
   font-weight: bold;
+  font-size: 2rem;
 }
 
 .navlinks {
@@ -60,12 +69,12 @@ background-color: rgba(255, 255, 255, 0.151);
 
 .navlinks a {
   /* border: 2px solid rebeccapurple; */
-  margin: 0 0.7rem;
+  margin: 0 0.5rem;
   margin-top: 0.5rem;
   padding: 0.4rem 1rem;
   text-decoration: none;
   color: white;
-  font-size: large;
+  font-size: 1.5rem;
   /* background-color: white; */
   border-radius: 0.4rem;
   font-family: Urbanist;
@@ -83,7 +92,21 @@ background-color: rgba(255, 255, 255, 0.151);
   margin: 0 1rem;
 }
 .footer-contact .social-icon{
-  margin-left: 15px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.footer .logo{
+  /* border: 2px solid rebeccapurple; */
+  font-size: 2rem;
+  margin: 0;
+  padding:1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+
 }
 .logo {
   /* margin-right: 3rem; */
@@ -102,7 +125,7 @@ background-color: rgba(255, 255, 255, 0.151);
 }
 .hero {
   /* border: 2px solid rebeccapurple; */
-  height: 800px;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -126,6 +149,7 @@ background-color: rgba(255, 255, 255, 0.151);
   color: white;
   margin: 1rem;
   font-weight: bold;
+  font-size: 18px;
 }
 #lost-item {
   /* border: 2px solid red; */
@@ -151,10 +175,10 @@ background-color: rgba(255, 255, 255, 0.151);
 }
 #lost-item > button > span{
   margin: 0 1rem;
-  font-size: large;
+  font-size: 24px;
 }
 #about {
-  background-color: black;
+  /* background-color: black; */
   color: white;
   padding-bottom: 3rem;
   margin: 0 4rem;
@@ -169,7 +193,7 @@ background-color: rgba(255, 255, 255, 0.151);
   background-color: rgba(255, 255, 255, 0.15);
   padding: 3rem;
   border-radius: 2rem;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-family: Poppins;
   line-height: 1.7;
   
@@ -177,7 +201,7 @@ background-color: rgba(255, 255, 255, 0.151);
 
 #nft {
   /* border: 2px solid rebeccapurple; */
-  background-color: black;
+  /* background-color: black; */
   color: white;
   padding: 0 4rem;
   text-align: left;
@@ -194,22 +218,21 @@ background-color: rgba(255, 255, 255, 0.151);
   margin: 2rem 0;
 }
 .sample-nft-img > img {
-  width: 25%;
-  margin-right: 6rem;
+  width: 30%;
+  /* margin-right: 6rem; */
 }
 .lost-solz-project > h2 {
   /* border: 2px solid red; */
   text-align: left;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
   font-family: Alegreya;
   /* margin: 2rem; */
 }
 .lost-solz-project ul {
   margin-left: 2rem;
-font-family: Poppins;
-font-weight: 300;
-/* font-size: 1rem; */
+  font-family: Poppins;
+  font-weight: 300;
   line-height: 1.7;
 }
 
@@ -218,8 +241,10 @@ font-weight: 300;
   line-height: 1.7;
   font-family: Poppins;
 font-weight: 300;
-
-
+}
+.lost-solz-project{
+  /* border: 2px solid rebeccapurple; */
+  margin-bottom: 6rem;
 }
 .lost-solz-project li {
   text-align: left;
@@ -227,12 +252,12 @@ font-weight: 300;
 
 }
 .team-container{
-  background-color: black;
+  /* background-color: black; */
+  /* border: 2px solid red; */
   color: white;
 }
 .footer {
    /* border: 2px solid rebeccapurple; */
-   /* position: fixed; */
    display: flex;
    align-items: center;
    justify-content: space-around;
@@ -246,7 +271,8 @@ font-weight: 300;
  background-color: rgba(255, 255, 255, 0.151);
    margin: 0;
    z-index: 5;
-   padding: 1rem;
+   padding:3rem 1rem;
+
    width: 100vw;
 }
 .team-members {
@@ -254,32 +280,34 @@ font-weight: 300;
   /* border: 2px solid rgb(61, 50, 50); */
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: left;
+  margin: 10rem;
+  margin-top: 3rem;
 }
 
 .member {
   /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
-  width: 20%;
-  margin: 3rem;
+  width: 30%;
+  /* margin: 3rem; */
 }
 .member > .name {
   font-weight: bold;
   margin: 1rem 1rem 0.7rem 0;
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-family: Alegreya;
+}
+.member > .desc {
+ font-size: 1.5rem;
+ margin-bottom: 2rem;
 }
 .member > img {
   height: auto;
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 html {
   font-family: "Montserrat";
 }
@@ -294,15 +322,16 @@ html {
   align-items: center;
   justify-content: center;
   /* padding: 100px 0; */
-  background-color: black;
+  /* background-color: black; */
   flex-direction: column;
   padding-bottom: 3rem;
 }
 .timeline {
-  width: 80%;
+  /* width: 80%; */
   height: auto;
-  max-width: 800px;
-  margin: 0 auto;
+  /* max-width: 800px; */
+  
+  margin: 0 15%;
   position: relative;
 }
 
@@ -310,7 +339,7 @@ html {
   list-style: none;
 }
 .timeline ul li {
-  padding: 20px;
+  padding: 2rem;
   background-color: #1e1f22;
   color: white;
   border-radius: 10px;
@@ -321,12 +350,12 @@ html {
 }
 .timeline-content h1 {
   font-weight: 500;
-  font-size: 25px;
+  font-size: 32px;
   line-height: 30px;
   margin-bottom: 10px;
 }
 .timeline-content p {
-  font-size: 16px;
+  font-size: 1.4rem;
   line-height: 30px;
   font-weight: 300;
   font-family: Poppins;
@@ -344,7 +373,7 @@ html {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 2px;
+    width: 6px;
     height: 100%;
     background-color: gray;
   }
@@ -391,16 +420,7 @@ html {
   }
 }
 
-h1 {
-  margin: 0;
-  line-height: 2;
-  text-align: center;
-}
 
-h2 {
-  margin: 0 0 0.5em;
-  font-weight: normal;
-}
 
 input {
   position: absolute;
@@ -412,7 +432,7 @@ input {
   display: flex;
   /* border: 2px solid red; */
   flex-direction: column;
-  background-color: black;
+  /* background-color: black; */
   color: white;
   padding-bottom: 3rem;
 }
@@ -445,7 +465,8 @@ input {
   cursor: pointer;
  margin-top: 15px;
  font-family: Poppins;
- padding: 2rem;
+ padding: 3rem;
+ font-size: 1.4rem;
   /* Icon */
 }
 .tab-label:hover {
@@ -460,16 +481,16 @@ input {
 }
 .tab-content {
   max-height: 0;
-  padding: 0 1em;
   color: white;
+  /* padding: 1em; */
+  padding-left: 3rem;
   background: #1e1f22;
   text-align: left;
   transition: all 0.35s;
-  padding-left: 2rem;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
  font-family: Poppins;
-
+ font-size: 1.3rem;
 }
 
 input:checked + .tab-label {
@@ -482,8 +503,8 @@ input:checked + .tab-label::after {
 }
 input:checked ~ .tab-content {
   max-height: 100vh;
-  padding: 1em;
-  padding-left: 2rem;
+  padding-bottom: 1em;
+  padding-left: 3rem;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 
@@ -500,4 +521,8 @@ input:checked ~ .tab-content {
 .section-heading{
 padding-top: 1rem;
   font-family: Alegreya;
+text-align: center;
+text-decoration: underline;
+font-size: 2.5rem;
+margin-bottom: 1rem;
 }

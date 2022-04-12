@@ -18,6 +18,7 @@ html {
 #landingPage{
   background: url('./assets/image/stars.png') no-repeat fixed;
   width: 100vw;
+  min-width: 800px;
 }
 .navbar {
   /* border: 2px solid rebeccapurple; */
@@ -38,6 +39,7 @@ background-color: rgba(255, 255, 255, 0.151);
   z-index: 5;
   padding: 1rem 4rem;
   width: 100vw;
+  min-width: 800px;
 }
 .navbar hr {
   display: block;
@@ -49,7 +51,7 @@ background-color: rgba(255, 255, 255, 0.151);
 }
 .navbar h2 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 24px;
 }
 
 .navlinks {
@@ -74,10 +76,10 @@ background-color: rgba(255, 255, 255, 0.151);
   padding: 0.4rem 1rem;
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 16.5px;
   /* background-color: white; */
   border-radius: 0.4rem;
-  font-family: Urbanist;
+  font-family: "Urbanist",sans-serif;
 }
 
 .contacts {
@@ -141,7 +143,7 @@ background-color: rgba(255, 255, 255, 0.151);
   border-bottom-right-radius: 1rem;
   border: none;
   font-weight: bold;
-  font-family: Poppins;
+  font-family: "Poppins",sans-serif;
   background-color: #2a2b2fe1;
   color: white;
 }
@@ -165,17 +167,17 @@ background-color: rgba(255, 255, 255, 0.151);
   padding: 1rem 1rem;
   border-radius: 0.7rem;
 
-  font-family: Poppins;
+  font-family: "Poppins",sans-serif;
   margin: 1rem;
   border: none;
-  font-weight: 500;
+  font-weight: bold;
   background-color: #2a2b2fe1;
   color: white;
 
 }
 #lost-item > button > span{
   margin: 0 1rem;
-  font-size: 24px;
+  font-size: 18px;
 }
 #about {
   /* background-color: black; */
@@ -193,9 +195,9 @@ background-color: rgba(255, 255, 255, 0.151);
   background-color: rgba(255, 255, 255, 0.15);
   padding: 3rem;
   border-radius: 2rem;
-  font-size: 1.4rem;
-  font-family: Poppins;
-  line-height: 1.7;
+  font-size: 18px;
+  font-family: "Poppins",sans-serif;
+  line-height: 1.5;
   
 }
 
@@ -224,9 +226,10 @@ background-color: rgba(255, 255, 255, 0.151);
 .lost-solz-project > h2 {
   /* border: 2px solid red; */
   text-align: left;
-  font-size: 1.6rem;
+  font-size: 24px;
   font-weight: bold;
   font-family: Alegreya;
+  color: #d3d3d3;
   /* margin: 2rem; */
 }
 .lost-solz-project ul {
@@ -238,9 +241,9 @@ background-color: rgba(255, 255, 255, 0.151);
 
 .lost-solz-project p {
   text-align: left;
-  line-height: 1.7;
-  font-family: Poppins;
-font-weight: 300;
+  line-height: 1.5;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
 }
 .lost-solz-project{
   /* border: 2px solid rebeccapurple; */
@@ -296,12 +299,13 @@ font-weight: 300;
 .member > .name {
   font-weight: bold;
   margin: 1rem 1rem 0.7rem 0;
-  font-size: 2rem;
+  font-size: 31px;
   font-family: Alegreya;
 }
 .member > .desc {
- font-size: 1.5rem;
+ font-size: 18px;
  margin-bottom: 2rem;
+ color: #d3d3d3;
 }
 .member > img {
   height: auto;
@@ -312,7 +316,7 @@ html {
   font-family: "Montserrat";
 }
 .container h1 {
-  color: white;
+  color: #d3d3d3;
   margin-bottom: 3rem;
 }
 .container {
@@ -349,16 +353,17 @@ html {
   margin-bottom: 0;
 }
 .timeline-content h1 {
-  font-weight: 500;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 30px;
   margin-bottom: 10px;
+  font-family: Alegreya;
+  font-weight: bold;
 }
 .timeline-content p {
-  font-size: 1.4rem;
-  line-height: 30px;
+  font-size: 15px;
+  line-height: 1.5;
   font-weight: 300;
-  font-family: Poppins;
+  font-family: Poppins,sans-serif;
 }
 .timeline-content .date {
   font-size: 12px;
@@ -464,9 +469,9 @@ input {
   font-weight: bold;
   cursor: pointer;
  margin-top: 15px;
- font-family: Poppins;
+ font-family: Poppins,sans-serif;
  padding: 3rem;
- font-size: 1.4rem;
+ font-size: 24px;
   /* Icon */
 }
 .tab-label:hover {
@@ -489,8 +494,8 @@ input {
   transition: all 0.35s;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
- font-family: Poppins;
- font-size: 1.3rem;
+ font-family: Poppins,sans-serif;
+ font-size: 18px;
 }
 
 input:checked + .tab-label {
@@ -520,9 +525,10 @@ input:checked ~ .tab-content {
 
 .section-heading{
 padding-top: 1rem;
-  font-family: Alegreya;
+font-family: Alegreya;
 text-align: center;
 text-decoration: underline;
-font-size: 2.5rem;
+font-size: 31.5px;
 margin-bottom: 1rem;
+color: #d3d3d3;
 }

@@ -27,6 +27,7 @@ import { MdOpenInNew } from "react-icons/md";
 import nftING from "./assets/image/nft.png";
 import nftImg1 from "./assets/image/nftimg1.png";
 import nftImg3 from "./assets/image/nftimg3.png";
+import meimg from "./assets/image/ME_logo.png";
 
 const ConnectButton = styled(WalletDialogButton)`
   margin-top: 2rem;
@@ -439,13 +440,13 @@ const Home = (props: HomeProps) => {
         </div>
       </div>
       <div className="hero" id="home">
-        <h1 style={{fontFamily: "Alegreya",fontSize:"2.5rem", marginTop:"8rem", color:"#f5f5f5"}}>SERIES 2 COMING SOON</h1>
+        <h1 style={{fontFamily: "Alegreya",fontSize:"31.5px", marginTop:"8rem", color:"#f5f5f5"}}>SERIES 2 COMING SOON</h1>
         <Container maxWidth="xs" style={{
           position: 'relative', display: "flex", alignItems: "center",  justifyContent:"center"
         }}>
         <div>
           {!wallet.connected ? (
-            <ConnectButton>Connect Wallet</ConnectButton>
+            <ConnectButton style={{fontSize:"18px",fontFamily: "Alegreya, sans-serif" }}>Connect Wallet</ConnectButton>
           ) : (
             <>
               {candyMachine && (
@@ -662,16 +663,7 @@ const Home = (props: HomeProps) => {
         </a>
         <div id="lost-item">
           <button>
-          <svg xmlns="http://www.w3.org/2000/svg" width="35.351" height="35.351" viewBox="0 0 41.351 41.351">
-  <g id="d4g2kks3qesuov391mzq" transform="translate(1.5 1.5)">
-    <path id="Path_6" data-name="Path 6" d="M339.832,728.209a20.817,20.817,0,0,0,11.871,9.809c5.267,1.714,8.6.542,13.249-1.639-5.11.461-8.648.42-13.011-2.991a20.793,20.793,0,0,1-5.77-7.01A20.93,20.93,0,0,0,339.832,728.209Z" transform="translate(-334.27 -708.248)" fill="#d81ffa"/>
-    <path id="Path_7" data-name="Path 7" d="M340.256,720.618a20.792,20.792,0,0,0,5.773,7.007c4.363,3.411,7.9,3.451,13.011,2.991-4.96-1.315-8.272-2.565-11.2-7.261a20.838,20.838,0,0,1-1.372-2.577A20.818,20.818,0,0,0,340.256,720.618Z" transform="translate(-328.371 -702.488)" fill="#e167ff"/>
-    <path id="Path_8" data-name="Path 8" d="M807.031,498.03a20.816,20.816,0,0,1,6.207.162,20.736,20.736,0,0,1-1.659-5.985,20.907,20.907,0,0,0-6.567-.443A20.841,20.841,0,0,0,807.031,498.03Z" transform="translate(-795.146 -479.9)" fill="#0057ff"/>
-    <path id="Path_9" data-name="Path 9" d="M342.024,517.208a21.286,21.286,0,0,1,2.829.709c5.267,1.714,7.276,4.632,9.746,9.129-.782-5.075-1.673-8.5-6.037-11.911a20.824,20.824,0,0,0-8.2-3.912,20.743,20.743,0,0,0,1.659,5.985Z" transform="translate(-323.931 -498.915)" fill="#189fff"/>
-    <path id="Path_10" data-name="Path 10" d="M314.09,274.83a20.823,20.823,0,0,1,8.2,3.912c4.363,3.411,5.255,6.836,6.037,11.911,1-5.038,1.332-8.561-1.6-13.257a20.846,20.846,0,0,0-12.383-9.14A20.947,20.947,0,0,0,314.09,274.83Z" transform="translate(-297.656 -262.522)" fill="#17ef97"/>
-    <path id="Path_11" data-name="Path 11" d="M75.593,94.769A19.175,19.175,0,1,1,94.769,75.593,19.175,19.175,0,0,1,75.593,94.769Z" transform="translate(-56.418 -56.418)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
-  </g>
-</svg>
+          <img src={meimg} width="35.351" height="35.351" alt="" />
 
             <span> MagicEden
             </span><MdOpenInNew
@@ -733,8 +725,8 @@ Solanart</span>
           </p>
           <br />
           <p>
-            For more information on the investment roadmap and long-term vision
-            <a style={{color:"white", fontWeight:"bold"}} href="/click-here">{" "}CLICK HERE</a>
+            For more information on the investment roadmap and long-term vision{" "}
+            <a style={{color:"white", fontWeight:"bold"}} href="/click-here">CLICK HERE</a>
           </p>
           <br />
           <p>
@@ -748,20 +740,21 @@ Solanart</span>
       </div>
       <div id="nft">
         <h1 className="section-heading">THE NFTS</h1>
-        <p style={{ fontSize: "1.4rem", lineHeight:"1.7" , fontFamily:"Poppins", marginBottom:"1rem" }}>
+        <p style={{ fontSize: "18px", lineHeight:"1.7" , fontFamily:"Poppins,sans-serif", marginBottom:"1rem" }}>
           There are two upcoming series to be released for the Lost Solz
           project: Series 1 (limited to 100) and Series 2 (limited to 9,900).
         </p>
         <div className="lost-solz-project">
           <h2>S1 LOST SOLZ (MAQUETTE)</h2>
-          <p style={{ fontSize: "1.4rem" }}>
+          <br></br>
+          <p style={{ fontSize: "21px" }}>
             S1 Lost Solz are a collection of 100 unique NFTs that serves as the
             blueprint of the project - as such, their eyes are carved with an
             ‘M’ for Maquette. S1 represents the flagship assets for the project
             as well, as they feature unique attributes that allow them to
             generate greater revenue than S2.
           </p>
-          <ul style={{ fontSize: "1.4rem" }}>
+          <ul style={{ fontSize: "21px" }}>
             <li>Share in 2.5% of S2 mint sales</li>
             <li>Share in 2.5% royalties from S2 secondary sales</li>
             <li>CS of 10</li>
@@ -778,13 +771,15 @@ Solanart</span>
         </div>
         <div className="lost-solz-project">
           <h2>S2 LOST SOLZ </h2>
-          <p style={{ fontSize: "1.4rem" }}>
+          <br></br>
+          <p style={{ fontSize: "21px" }}>
             S2 Lost Solz are a collection of 9,900 unique NFTs that draw
             inspiration from “lost souls” in popular culture (movies, music,
             sports, tv). Unlike S1, these characters will incur damage each time
             they are resold.
           </p>
-          <ul style={{ fontSize: "1.4rem" }}>
+          <br></br>
+          <ul style={{ fontSize: "21px" }}>
             <li>
               CS deteriorates after each secondary sale
               <ul>
@@ -842,7 +837,7 @@ Solanart</span>
           <ul>
             <li>
               <div style={{ textAlign: "left" }} className="timeline-content">
-                <h1 style={{ textAlign: "left" }}>Phase 1</h1>
+                <h1 style={{ textAlign: "left" }}>PHASE 1</h1>
                 <p>
                   • Mint S1 Lost Solz (100 NFTs)
                   <br />
@@ -862,7 +857,7 @@ Solanart</span>
             </li>
             <li>
               <div style={{ textAlign: "left" }} className="timeline-content">
-                <h1 style={{ textAlign: "left" }}>Phase 2</h1>
+                <h1 style={{ textAlign: "left" }}>PHASE 2</h1>
                 <p>
                   • Public campaigns (promotions, giveaways, collaborations) to
                   raise awareness of project <br />
@@ -876,13 +871,13 @@ Solanart</span>
             </li>
             <li>
               <div style={{ textAlign: "left" }} className="timeline-content">
-                <h1 style={{ textAlign: "left" }}>Phase 3</h1>
+                <h1 style={{ textAlign: "left" }}>PHASE 3</h1>
                 <p>• Whitelist and public mint for S2</p>
               </div>
             </li>
             <li>
               <div style={{ textAlign: "left" }} className="timeline-content">
-                <h1 style={{ textAlign: "left" }}>Phase 4</h1>
+                <h1 style={{ textAlign: "left" }}>PHASE 4</h1>
                 <p>
                   • Investment roadmap begins to bring value and passive income
                   to NFT holders
@@ -977,12 +972,12 @@ Solanart</span>
       </div>
       <div className="footer">
         <div style={{display:"flex", alignItems:"flex-start", flexDirection:"column", padding:"0"}}>
-          <h1 style={{margin:"0", padding:"0", fontSize:"2.5rem"}}>Contact</h1>
+          <h1 style={{margin:"0", padding:"0", fontSize:"31px", color:"white"}}>Contact</h1>
           <p  style={{margin:"0", fontSize:"1.5rem"}}>contact@thelostsolz.com</p>
         </div>
         <div className="logo">LS</div>
         <div style={{display:"flex", alignItems:"center", flexDirection:"column", padding:"0"}}>
-          <h1 style={{margin:"0", padding:"0", fontSize:"2.5rem"}}>Follow</h1>
+          <h1 style={{margin:"0", padding:"0", fontSize:"31px",color:"white"}}>Follow</h1>
           <div  className='footer-contact' style={{margin:"0", padding:"0", display:"flex", justifyContent:"space-between",}}>
             <div className="social-icon" style={{ marginLeft: "0" }}>
             <a href="https://www.google.com">

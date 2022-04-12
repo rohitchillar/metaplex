@@ -27,7 +27,6 @@ import { MdOpenInNew } from "react-icons/md";
 import nftING from "./assets/image/nft.png";
 import nftImg1 from "./assets/image/nftimg1.png";
 import nftImg3 from "./assets/image/nftimg3.png";
-import starsBackground from "./assets/image/stars.png";
 
 const ConnectButton = styled(WalletDialogButton)`
   margin-top: 2rem;
